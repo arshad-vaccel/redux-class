@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchPosts, createPost, updatePost, deletePost } from "./postsSlice";
 import { Loader2, Pencil, Trash2, RefreshCw, User, Plus } from "lucide-react";
+
+import { fetchPosts, createPost, updatePost, deletePost } from "./postsSlice";
 
 export function ThunkPosts() {
   const dispatch = useDispatch();
-  const { items: posts, status, error } = useSelector((state) => state.posts);
+  const { data: posts, status, error } = useSelector((state) => state.posts);
+
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
   const [editingId, setEditingId] = useState(null);

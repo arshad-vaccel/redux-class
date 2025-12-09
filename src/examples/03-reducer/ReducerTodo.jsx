@@ -4,6 +4,7 @@ import { todoReducer } from "./todoReducer";
 
 export function ReducerTodo() {
   const [todos, dispatch] = useReducer(todoReducer, []);
+
   const [input, setInput] = useState("");
 
   const handleSubmit = (e) => {

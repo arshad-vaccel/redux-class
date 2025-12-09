@@ -2,6 +2,16 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 const API_BASE = "https://jsonplaceholder.typicode.com";
 
+// const fetchPosts = async()=>{
+//   const res = await axios.get(`${API_BASE}/posts?_limit=10`);
+//   return res.data;
+// }
+// const [posts, setPosts] = useState([]);
+
+// useEffect(() => {
+//   fetchPosts().then(data => setPosts(data)
+// }, []);
+
 // Async thunks using real JSONPlaceholder API
 export const fetchPosts = createAsyncThunk("posts/fetchPosts", async () => {
   const response = await fetch(`${API_BASE}/posts?_limit=10`);
@@ -49,7 +59,7 @@ export const deletePost = createAsyncThunk(
 const postsSlice = createSlice({
   name: "posts",
   initialState: {
-    data: [],
+    items: [],
     status: "idle", // 'idle' | 'loading' | 'succeeded' | 'failed'
     error: null,
   },
