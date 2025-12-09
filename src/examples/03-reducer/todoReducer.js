@@ -1,13 +1,6 @@
-import { Todo } from '../../types/todo';
-
-export type TodoAction =
-  | { type: 'ADD_TODO'; payload: string }
-  | { type: 'TOGGLE_TODO'; payload: string }
-  | { type: 'DELETE_TODO'; payload: string };
-
-export function todoReducer(state: Todo[], action: TodoAction): Todo[] {
+export function todoReducer(state, action) {
   switch (action.type) {
-    case 'ADD_TODO':
+    case "ADD_TODO":
       return [
         ...state,
         {
@@ -16,13 +9,13 @@ export function todoReducer(state: Todo[], action: TodoAction): Todo[] {
           completed: false,
         },
       ];
-    case 'TOGGLE_TODO':
+    case "TOGGLE_TODO":
       return state.map((todo) =>
         todo.id === action.payload
           ? { ...todo, completed: !todo.completed }
           : todo
       );
-    case 'DELETE_TODO':
+    case "DELETE_TODO":
       return state.filter((todo) => todo.id !== action.payload);
     default:
       return state;

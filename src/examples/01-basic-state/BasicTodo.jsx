@@ -1,42 +1,24 @@
-import { useState, useEffect } from 'react';
-import { Plus, Check, Trash2 } from 'lucide-react';
-import { Todo } from '../../types/todo';
+import { useState } from "react";
+import { Plus, Check, Trash2 } from "lucide-react";
 
-const STORAGE_KEY = 'persistent_todos';
+export function BasicTodo() {
+  const [todos, setTodos] = useState([]);
+  const [input, setInput] = useState("");
 
-export function PersistentTodo() {
-  const [todos, setTodos] = useState<Todo[]>([]);
-  const [input, setInput] = useState('');
-
-  useEffect(() => {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    if (stored) {
-      try {
-        setTodos(JSON.parse(stored));
-      } catch (error) {
-        console.error('Error parsing stored todos:', error);
-      }
-    }
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(todos));
-  }, [todos]);
-
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (input.trim()) {
-      const newTodo: Todo = {
+      const newTodo = {
         id: crypto.randomUUID(),
         text: input.trim(),
         completed: false,
       };
-      setTodos((prev) => [newTodo, ...prev]);
-      setInput('');
+      setTodos((prev) => [...prev, newTodo]);
+      setInput("");
     }
   };
 
-  const toggleTodo = (id: string) => {
+  const toggleTodo = (id) => {
     setTodos((prev) =>
       prev.map((todo) =>
         todo.id === id ? { ...todo, completed: !todo.completed } : todo
@@ -44,7 +26,7 @@ export function PersistentTodo() {
     );
   };
 
-  const deleteTodo = (id: string) => {
+  const deleteTodo = (id) => {
     setTodos((prev) => prev.filter((todo) => todo.id !== id));
   };
 
@@ -56,11 +38,11 @@ export function PersistentTodo() {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder="Add a new todo..."
-          className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+          className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
         />
         <button
           type="submit"
-          className="px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors flex items-center gap-2"
+          className="px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors flex items-center gap-2"
         >
           <Plus size={20} />
         </button>
@@ -81,8 +63,8 @@ export function PersistentTodo() {
                 onClick={() => toggleTodo(todo.id)}
                 className={`flex-shrink-0 w-6 h-6 rounded border-2 flex items-center justify-center transition-colors ${
                   todo.completed
-                    ? 'bg-green-500 border-green-500'
-                    : 'border-gray-300 hover:border-green-500'
+                    ? "bg-green-500 border-green-500"
+                    : "border-gray-300 hover:border-green-500"
                 }`}
               >
                 {todo.completed && <Check size={16} className="text-white" />}
@@ -90,8 +72,8 @@ export function PersistentTodo() {
               <span
                 className={`flex-1 ${
                   todo.completed
-                    ? 'line-through text-gray-400'
-                    : 'text-gray-700'
+                    ? "line-through text-gray-400"
+                    : "text-gray-700"
                 }`}
               >
                 {todo.text}
