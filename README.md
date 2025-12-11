@@ -78,32 +78,39 @@ src/
 ## 💡 Learning Path
 
 ### Level 1: Basic State (Purple)
+
 - Learn the `useState` hook
 - Understand local component state
 - Practice event handling and state updates
 
 ### Level 2: Context API (Blue)
+
 - Solve prop drilling with Context
 - Create custom hooks for consuming context
 - Understand Provider pattern
 
 ### Level 3: useReducer (Emerald)
+
 - Implement reducer functions
 - Define action types and dispatch
 - Manage predictable state transitions
 
 ### Level 4: Persistent State (Orange)
+
 - Integrate localStorage API
 - Sync state with useEffect
 - Handle data persistence errors
 
 ### Level 5: Redux Toolkit (Pink)
+
 - Configure Redux store
 - Create slices with reducers
 - Use `useSelector` and `useDispatch` hooks
 
 ### Level 6: Redux Thunk (Green) 🌐
+
 **[Dedicated Page: `/redux-thunk`]**
+
 - Async operations with `createAsyncThunk`
 - Real API integration with JSONPlaceholder
 - Handle loading states (pending/fulfilled/rejected)
@@ -111,7 +118,9 @@ src/
 - Full CRUD operations (Create, Read, Update, Delete)
 
 ### Level 7: RTK Query (Indigo) 🚀
+
 **[Dedicated Page: `/rtk-query`]**
+
 - Modern data fetching with `createApi`
 - Automatic caching and refetching
 - Query and Mutation hooks
@@ -119,6 +128,7 @@ src/
 - Minimal boilerplate, maximum power
 
 ## 🌐 API Integration
+
 ## 🛠️ Tech Stack
 
 - **React 18** - UI library
@@ -138,6 +148,7 @@ src/
 - ✅ Full control over API calls
 
 ### RTK Query Features:
+
 - ✅ Automatic request deduplication
 - ✅ Built-in caching strategies
 - ✅ Optimistic updates
@@ -148,15 +159,16 @@ src/
 
 Each example builds upon the previous one, introducing new concepts:
 
-| Example           | State Location   | Sharing Method | Complexity | API Integration | Caching        |
-| ----------------- | ---------------- | -------------- | ---------- | --------------- | -------------- |
-| 01 - Basic        | Component        | Props          | Low        | No              | No             |
-| 02 - Context      | Context Provider | useContext     | Medium     | No              | No             |
-| 03 - Reducer      | Component        | Props          | Medium     | No              | No             |
-| 04 - Persistent   | Component        | Props          | Medium     | No              | localStorage   |
-| 05 - Redux        | Global Store     | useSelector    | High       | No              | Optional       |
-| 06 - Redux Thunk  | Global Store     | useSelector    | High       | ✅ Yes          | Manual         |
-| 07 - RTK Query    | Global Store     | useQuery hooks | Medium     | ✅ Yes          | ✅ Automatic   |
+| Example          | State Location   | Sharing Method | Complexity | API Integration | Caching      |
+| ---------------- | ---------------- | -------------- | ---------- | --------------- | ------------ |
+| 01 - Basic       | Component        | Props          | Low        | No              | No           |
+| 02 - Context     | Context Provider | useContext     | Medium     | No              | No           |
+| 03 - Reducer     | Component        | Props          | Medium     | No              | No           |
+| 04 - Persistent  | Component        | Props          | Medium     | No              | localStorage |
+| 05 - Redux       | Global Store     | useSelector    | High       | No              | Optional     |
+| 06 - Redux Thunk | Global Store     | useSelector    | High       | ✅ Yes          | Manual       |
+| 07 - RTK Query   | Global Store     | useQuery hooks | Medium     | ✅ Yes          | ✅ Automatic |
+
 ## 📖 Teaching Tips
 
 1. Start with example 01 and work sequentially
@@ -175,6 +187,7 @@ Each example builds upon the previous one, introducing new concepts:
 - 🩷 Pink - Redux Toolkit
 - 🟢 Green - Redux Thunk (with API)
 - 🟣 Indigo - RTK Query (with API)simple to highlight the state management pattern
+
 5. Compare implementations side-by-side in the UI
 
 ## 🎨 Color Coding
