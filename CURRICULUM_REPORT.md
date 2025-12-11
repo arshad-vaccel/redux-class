@@ -32,36 +32,34 @@ By the end of this training, students can:
 
 ### **Day 1: Foundations of React State Management**
 
-**Duration:** 8 hours  
+**Duration:** 2 hours  
 **Topics Covered:**
 
 #### Module 1.1: Basic State Management with useState
+
 - **Learning Outcomes:**
   - Understanding React component state lifecycle
   - Managing local component state with `useState` hook
   - Handling user input and form submissions
-  
 - **Practical Exercise:**
   - Built a fully functional Todo application (`BasicTodo.jsx`)
   - Implemented CRUD operations (Create, Read, Update, Delete)
   - Added toggle completion and delete functionality
-  
 - **Key Concepts:**
   - State initialization and updates
   - Immutable state updates
   - Event handling in React
 
 #### Module 1.2: Global State with Context API
+
 - **Learning Outcomes:**
   - Understanding prop drilling problems
   - Creating and providing context
   - Consuming context in nested components
-  
 - **Practical Exercise:**
   - Refactored Todo app using Context API (`TodoContext.jsx`, `ContextTodo.jsx`)
   - Shared state across component tree without prop drilling
   - Implemented context provider pattern
-  
 - **Key Concepts:**
   - `createContext()`, `useContext()` hooks
   - Provider pattern
@@ -71,20 +69,19 @@ By the end of this training, students can:
 
 ### **Day 2: Advanced State Patterns & Persistence**
 
-**Duration:** 8 hours  
+**Duration:** 3 hours  
 **Topics Covered:**
 
 #### Module 2.1: Complex State with useReducer
+
 - **Learning Outcomes:**
   - Managing complex state logic with reducers
   - Understanding action-based state updates
   - Implementing predictable state transitions
-  
 - **Practical Exercise:**
   - Built Todo app with `useReducer` hook (`ReducerTodo.jsx`)
   - Created `todoReducer.js` with action types
   - Implemented centralized state management logic
-  
 - **Key Concepts:**
   - Reducer functions and action creators
   - State immutability patterns
@@ -92,16 +89,15 @@ By the end of this training, students can:
   - Dispatch mechanism
 
 #### Module 2.2: State Persistence with localStorage
+
 - **Learning Outcomes:**
   - Persisting state across browser sessions
   - Synchronizing state with localStorage
   - Handling serialization and deserialization
-  
 - **Practical Exercise:**
   - Enhanced Todo app with localStorage integration (`PersistentTodo.jsx`)
   - Implemented auto-save functionality
   - Handled edge cases and error scenarios
-  
 - **Key Concepts:**
   - `localStorage` API
   - JSON serialization
@@ -112,20 +108,19 @@ By the end of this training, students can:
 
 ### **Day 3: Enterprise State Management with Redux Toolkit**
 
-**Duration:** 8 hours  
+**Duration:** 3 hours  
 **Topics Covered:**
 
 #### Module 3.1: Introduction to Redux Toolkit
+
 - **Learning Outcomes:**
   - Understanding Redux core concepts (Store, Actions, Reducers)
   - Setting up Redux Toolkit in React applications
   - Using modern Redux patterns and best practices
-  
 - **Practical Exercise:**
   - Configured Redux store (`store.js`)
   - Created todo slice with Redux Toolkit (`todoSlice.js`)
   - Built Redux-powered Todo app (`ReduxTodo.jsx`)
-  
 - **Key Concepts:**
   - `configureStore()`, `createSlice()`
   - Immer integration for immutable updates
@@ -133,11 +128,11 @@ By the end of this training, students can:
   - Provider setup with `react-redux`
 
 #### Module 3.2: Redux Hooks and Component Integration
+
 - **Learning Outcomes:**
   - Using `useSelector` for reading state
   - Using `useDispatch` for dispatching actions
   - Optimizing component re-renders
-  
 - **Key Concepts:**
   - Selector functions and memoization
   - Action dispatching patterns
@@ -148,20 +143,19 @@ By the end of this training, students can:
 
 ### **Day 4: Asynchronous Operations & Modern Data Fetching**
 
-**Duration:** 8 hours  
+**Duration:** 2 hours  
 **Topics Covered:**
 
 #### Module 4.1: Redux Thunk Middleware
+
 - **Learning Outcomes:**
   - Handling asynchronous operations in Redux
   - Implementing API calls with Redux Thunk
   - Managing loading and error states
-  
 - **Practical Exercise:**
   - Built blog posts application with API integration (`ThunkPosts.jsx`)
   - Created async thunks for fetching data (`postsSlice.js`, `usersSlice.js`)
   - Implemented loading, success, and error state handling
-  
 - **Key Concepts:**
   - `createAsyncThunk()` API
   - Thunk middleware configuration
@@ -170,16 +164,15 @@ By the end of this training, students can:
   - JSONPlaceholder API integration
 
 #### Module 4.2: RTK Query - Modern Data Fetching
+
 - **Learning Outcomes:**
   - Understanding declarative data fetching
   - Implementing automatic caching and invalidation
   - Using auto-generated React hooks for queries and mutations
-  
 - **Practical Exercise:**
   - Created API endpoints with RTK Query (`postsApi.js`)
   - Built posts application with RTK Query (`RTKQueryPosts.jsx`)
   - Implemented CRUD operations with automatic cache management
-  
 - **Key Concepts:**
   - `createApi()`, `fetchBaseQuery()`
   - Query and mutation hooks
@@ -191,21 +184,22 @@ By the end of this training, students can:
 
 ### **Day 5: Doubt Session & Architecture Decisions**
 
-**Duration:** 6 hours  
+**Duration:** 2 hours  
 **Topics Covered:**
 
 #### Session 5.1: Q&A and Concept Reinforcement
+
 - Addressed student queries on all covered topics
 - Clarified complex concepts (Redux flow, async patterns, caching)
 - Debugged student code and resolved implementation issues
 - Discussed real-world use cases and scenarios
 
 #### Session 5.2: Architecture Decision Making
+
 - **Learning Outcomes:**
   - Choosing the right state management solution
   - Understanding trade-offs between different approaches
   - Making informed architectural decisions
-  
 - **Key Topics:**
   - When to use useState vs useReducer vs Redux
   - RTK Query vs Redux Thunk vs Redux Saga
@@ -213,6 +207,7 @@ By the end of this training, students can:
   - Best practices and anti-patterns
 
 #### Session 5.3: Advanced Patterns Discussion
+
 - Code organization and project structure
 - Shared components architecture (`TodoInput.jsx`, `TodoItem.jsx`)
 - Routing with React Router DOM
@@ -224,6 +219,7 @@ By the end of this training, students can:
 ## 🛠 Technical Stack Utilized
 
 ### **Core Technologies:**
+
 - **React 18.3.1** - Modern React with hooks
 - **Redux Toolkit 2.0.0** - State management
 - **React Redux 9.0.0** - React bindings for Redux
@@ -231,16 +227,19 @@ By the end of this training, students can:
 - **Vite 5.4.2** - Build tool and dev server
 
 ### **UI & Styling:**
+
 - **TailwindCSS 3.4.1** - Utility-first CSS framework
 - **Lucide React 0.344.0** - Icon library
 - **PostCSS & Autoprefixer** - CSS processing
 
 ### **Development Tools:**
+
 - **ESLint 9.9.1** - Code linting
 - **Vite** - Fast development experience
 - Redux DevTools - State debugging
 
 ### **External APIs:**
+
 - **JSONPlaceholder** - Mock REST API for learning
 
 ---
@@ -248,6 +247,7 @@ By the end of this training, students can:
 ## 📊 Training Methodology
 
 ### **Teaching Approach:**
+
 1. **Incremental Complexity** - Started with basic concepts, progressively advanced
 2. **Hands-on Practice** - Every concept reinforced with practical coding exercises
 3. **Real-world Applications** - Used realistic examples (Todo, Blog Posts)
@@ -255,6 +255,7 @@ By the end of this training, students can:
 5. **Best Practices First** - Emphasized modern patterns and industry standards
 
 ### **Project-Based Learning:**
+
 - **7 Progressive Examples** - Each example builds upon previous knowledge
 - **Reusable Components** - Taught component composition with shared UI elements
 - **Production-Ready Setup** - Professional project structure and configuration
@@ -267,6 +268,7 @@ By the end of this training, students can:
 Students completed the following:
 
 1. **Todo Application** - 4 different implementations:
+
    - Basic state with `useState`
    - Global state with Context API
    - Predictable state with `useReducer`
@@ -274,6 +276,7 @@ Students completed the following:
    - Enterprise Redux implementation
 
 2. **Blog Posts Application** - 2 different approaches:
+
    - Redux Thunk with manual async handling
    - RTK Query with automatic caching
 
@@ -284,6 +287,7 @@ Students completed the following:
 ## 📈 Key Achievements & Outcomes
 
 ### **Technical Skills Developed:**
+
 - ✅ Proficiency in 7 different state management patterns
 - ✅ Understanding of when to use each approach
 - ✅ Ability to integrate external APIs
@@ -291,6 +295,7 @@ Students completed the following:
 - ✅ Experience with industry-standard tools
 
 ### **Professional Skills Enhanced:**
+
 - ✅ Code organization and project structuring
 - ✅ Git workflow and version control
 - ✅ Debugging with Redux DevTools
@@ -298,6 +303,7 @@ Students completed the following:
 - ✅ Best practices and design patterns
 
 ### **Career Readiness:**
+
 - Students can confidently work on React projects with Redux
 - Prepared for technical interviews on state management
 - Portfolio-ready projects for job applications
@@ -308,6 +314,7 @@ Students completed the following:
 ## 🔄 Curriculum Highlights
 
 ### **Progressive Learning Path:**
+
 ```
 Day 1: useState → Context API
 Day 2: useReducer → localStorage
@@ -318,13 +325,13 @@ Day 5: Integration & Best Practices
 
 ### **Comparison Matrix Taught:**
 
-| Approach | Complexity | Use Case | Boilerplate | Performance |
-|----------|-----------|----------|-------------|-------------|
-| useState | Low | Local state | Minimal | Excellent |
-| Context API | Medium | App-wide state | Low | Good |
-| useReducer | Medium | Complex local state | Medium | Excellent |
-| Redux Toolkit | High | Enterprise apps | Medium | Good |
-| RTK Query | Medium | API data fetching | Low | Excellent |
+| Approach      | Complexity | Use Case            | Boilerplate | Performance |
+| ------------- | ---------- | ------------------- | ----------- | ----------- |
+| useState      | Low        | Local state         | Minimal     | Excellent   |
+| Context API   | Medium     | App-wide state      | Low         | Good        |
+| useReducer    | Medium     | Complex local state | Medium      | Excellent   |
+| Redux Toolkit | High       | Enterprise apps     | Medium      | Good        |
+| RTK Query     | Medium     | API data fetching   | Low         | Excellent   |
 
 ---
 
@@ -341,12 +348,14 @@ Day 5: Integration & Best Practices
 ## 📝 Assessment & Feedback
 
 ### **Student Progress:**
+
 - All students successfully completed hands-on exercises
 - Demonstrated understanding through code implementations
 - Engaged actively in doubt session discussions
 - Showed improvement from Day 1 to Day 5
 
 ### **Knowledge Verification:**
+
 - Code reviews conducted during doubt session
 - Troubleshooting exercises solved collaboratively
 - Architectural decision discussions
@@ -367,12 +376,14 @@ Day 5: Integration & Best Practices
 ## 🔮 Future Recommendations
 
 ### **For Students:**
+
 - Practice building a full-stack application with Redux
 - Explore Redux Saga for complex workflows
 - Study TypeScript integration with Redux
 - Contribute to open-source Redux projects
 
 ### **For Next Cohort:**
+
 - Consider adding TypeScript examples
 - Include unit testing with Redux (Jest, RTL)
 - Add advanced RTK Query patterns (streaming, websockets)
@@ -385,6 +396,7 @@ Day 5: Integration & Best Practices
 **GitHub Repository:** [https://github.com/arshad-vaccel/redux-class](https://github.com/arshad-vaccel/redux-class)
 
 **Setup Instructions:**
+
 ```bash
 # Clone repository
 git clone https://github.com/arshad-vaccel/redux-class.git
@@ -410,9 +422,9 @@ The curriculum balanced theoretical understanding with practical implementation,
 
 **Prepared by:** Arshad  
 **Date:** December 11, 2025  
-**Course Duration:** 5 Days (38 Hours Total)  
-**Students Trained:** [Number of Students]
+**Course Duration:** 5 Days
+**Students Trained:** 6
 
 ---
 
-*This curriculum report documents the comprehensive training delivered and serves as a reference for future training programs and course improvements.*
+_This curriculum report documents the comprehensive training delivered and serves as a reference for future training programs and course improvements._
