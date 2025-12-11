@@ -4,7 +4,7 @@
 **Duration:** 5 Days (4 Training Days + 1 Doubt Session)  
 **Date:** December 2025  
 **Training Mode:** Hands-on Practical Workshop  
-**Repository:** [redux-class: https://github.com/arshad-vaccel/redux-class](https://github.com/arshad-vaccel/redux-class)
+**Github Repository:** [https://github.com/arshad-vaccel/redux-class](https://github.com/arshad-vaccel/redux-class)
 
 ---
 
